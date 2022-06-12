@@ -8,18 +8,20 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialcardView"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="20dp"
         android:checkable="true"
         android:clickable="true"
-        android:elevation="8dp"
+        android:elevation="15dp"
         android:focusable="true"
         app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +42,9 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="5dp"
                 android:text="Lista de compras"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -51,6 +54,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:text=" 01/01/1970  Sábado"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="10sp" />
 
@@ -58,23 +62,59 @@
                 android:id="@+id/status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#08AA5B"
                 android:paddingStart="12dp"
-                android:paddingTop="5dp"
+                android:paddingTop="25dp"
                 android:paddingEnd="12dp"
-                android:paddingBottom="5dp"
+                android:paddingBottom="25dp"
                 android:text="Comprou tudo"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/qtdItems"
+                android:id="@+id/tvitemsToBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Itens comprados"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/qtToBuy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="12dp"
+                android:paddingTop="10dp"
                 android:paddingEnd="12dp"
-                android:text="206 itens"
-                android:textAlignment="textStart"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvitemsbought"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens não comprados"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/qtBought"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
