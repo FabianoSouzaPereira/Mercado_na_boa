@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departaments">
+        <item>Açougue</item>
+        <item>Frios e laticínios</item>
+        <item>Adega e bebidas</item>
+        <item>Higiene e limpeza</item>
+        <item>Hortifruti e mercearia</item>
+        <item>Padaria</item>
+        <item>Enlatados</item>
+        <item>Cereais</item>
+        <item>Rotisseria</item>
+    </string-array>
+</resources>

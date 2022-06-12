@@ -50,7 +50,11 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvCards"
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
+                android:layout_height="350dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
 
             </androidx.recyclerview.widget.RecyclerView>
 
@@ -76,6 +80,8 @@
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#C5ADAD"
+        app:strokeWidth="3dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
