@@ -9,7 +9,7 @@
         <entry key="app/src/main/res/drawable/round_outline.xml" value="0.262" />
         <entry key="app/src/main/res/drawable/rounded_style.xml" value="0.2235" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.30694444444444446" />
-        <entry key="app/src/main/res/layout/fragment_add_list.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_add_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.2528205128205128" />
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/item_products.xml" value="0.2557291666666667" />
