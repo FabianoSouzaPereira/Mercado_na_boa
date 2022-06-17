@@ -1,10 +1,10 @@
 package com.fabianospdev.mercadonaboa.model.listas
 
-import com.fabianospdev.mercadonaboa.model.listas.products.Products
+import com.fabianospdev.mercadonaboa.model.listas.products.Itens
 
 class ListShopping (
     var name: String,
-    var products: MutableList<Products>,
+    var itens: MutableList<Itens>,
     var qtToBuy: Int,
     var qtBought: Int,
     var statusList: String,

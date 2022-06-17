@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.fabianospdev.mercadonaboa.adapters.ItemRecyclerViewAdapter
+import com.fabianospdev.mercadonaboa.adapters.AdapterItemRecyclerView
 import com.fabianospdev.mercadonaboa.placeholder.PlaceholderContent
 
 /**
@@ -39,7 +39,7 @@ class ItemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = ItemRecyclerViewAdapter(PlaceholderContent.ITEMS)
+                adapter = AdapterItemRecyclerView(PlaceholderContent.ITEMS)
             }
         }
         return view

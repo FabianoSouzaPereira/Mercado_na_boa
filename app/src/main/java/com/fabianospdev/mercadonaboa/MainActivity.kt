@@ -11,9 +11,9 @@ import com.fabianospdev.mercadonaboa.adapters.AdapterCardHome
 import com.fabianospdev.mercadonaboa.model.listas.ListShopping
 import com.fabianospdev.mercadonaboa.model.listas.products.Categoria
 import com.fabianospdev.mercadonaboa.model.listas.products.Fabricante
+import com.fabianospdev.mercadonaboa.model.listas.products.Itens
 import com.fabianospdev.mercadonaboa.model.listas.products.Products
 import com.fabianospdev.mercadonaboa.utils.Dates
-import com.fabianospdev.mercadonaboa.utils.Shared
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,10 +35,15 @@ class MainActivity : AppCompatActivity() {
         val fabricante = Fabricante("Homo")
         val product1 = Products(1, "sabão", categoria, fabricante, 24.80)
         val product2 = Products(2, "sabão neutro", categoria, fabricante, 14.80)
-        Shared.instance.products.add(product1)
-        Shared.instance.products.add(product2)
 
-        val shopping = ListShopping("Lista compras", Shared.instance.products, 2, 2, "Concluido", Dates().stringToDate()?: "")
+        val item1 = Itens(product1,2.22,2)
+        val item2 = Itens(product2,4.25,5)
+        val itens: MutableList<Itens> = arrayListOf()
+        itens.add(item1)
+        itens.add(item2)
+
+
+        val shopping = ListShopping("Lista compras", itens, 2, 2, "Concluido", Dates().stringToDate()?: "")
         list.add(shopping)
         list.add(shopping)
         list.add(shopping)
@@ -48,7 +53,10 @@ class MainActivity : AppCompatActivity() {
         initializeAdapter()
 
         btnList.setOnClickListener {
-
+            val addListFragment = AddListFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.activity_main, addListFragment)
+                .addToBackStack("activity_main").commit()
         }
     }
 

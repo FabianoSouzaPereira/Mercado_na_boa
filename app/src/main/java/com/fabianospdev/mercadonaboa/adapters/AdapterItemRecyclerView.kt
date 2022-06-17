@@ -8,9 +8,9 @@ import com.fabianospdev.mercadonaboa.databinding.FragmentItemBinding
 import com.fabianospdev.mercadonaboa.placeholder.PlaceholderContent.PlaceholderItem
 
 
-class ItemRecyclerViewAdapter(
+class AdapterItemRecyclerView(
     private val values: List<PlaceholderItem>
-) : RecyclerView.Adapter<ItemRecyclerViewAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<AdapterItemRecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 

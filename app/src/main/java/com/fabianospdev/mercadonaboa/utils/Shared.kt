@@ -1,6 +1,7 @@
 package com.fabianospdev.mercadonaboa.utils
 
 import com.fabianospdev.mercadonaboa.model.listas.ListShopping
+import com.fabianospdev.mercadonaboa.model.listas.products.Itens
 import com.fabianospdev.mercadonaboa.model.listas.products.Products
 
 class Shared {
@@ -16,4 +17,5 @@ class Shared {
 
     var listShopping: MutableList<ListShopping> = arrayListOf()
     var products: MutableList<Products> = arrayListOf()
+    var itens: MutableList<Itens> = arrayListOf()
 }
